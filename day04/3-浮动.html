@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮动布局</title>
+  <style>
+    body ,p{
+      margin: 0;
+    }
+    .content {
+      background-color: #cccccc;
+    }
+    .content > div {
+      height: 200px;
+      width: 50px;
+      background-color: teal;
+      float: left;
+      margin-right: 1em;
+    }
+    .content::after {
+      clear: left;
+      display: block;
+      content: "";
+    }
+
+    .pane {
+      background-color: pink;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="pane">
+
+  </div>
+</body>
+</html>

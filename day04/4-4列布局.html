@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮动布局</title>
+  <style>
+    body ,ul ,p,h1,h2{
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    /* 人气推荐 */
+    .recommand {
+      margin-bottom: 1em;
+      background-color: #f4f0ea;
+    }
+    .recommand > ul.products {
+      width: 1090px;
+      margin: 0 auto; 
+      padding: 1em 0;
+    }
+    .recommand > ul.products::after {
+      clear: both;
+      content: "";
+      display: block;
+    }
+    .recommand > ul.products > li {
+      float: left;
+      width: 223px;
+      height: 300px;
+      margin-right: 10px;
+      background-color: pink;
+    }
+    .recommand > ul.products > li:first-child{
+      width: 391px;
+      height: 610px;
+    }
+    .recommand > ul.products > li:nth-child(4),
+    .recommand > ul.products > li:nth-child(7){
+      margin-right: 0;
+    }
+
+    .recommand > ul.products > li:nth-child(2),
+    .recommand > ul.products > li:nth-child(3),
+    .recommand > ul.products > li:nth-child(4) {
+      margin-bottom: 10px;
+    }
+
+    /* 新品 */
+    .news {
+      margin-bottom: 1em;
+    }
+    .news > ul.list {
+      width: 1090px;
+      margin: 0 auto;
+      padding: 1em 0;
+    }
+    .news > ul.list::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    .news > ul.list > li  {
+      height: 300px;
+      float: left;
+      width: 265px;
+      margin-right: 10px;
+      margin-bottom: 1em;
+    }
+    .news > ul.list > li:nth-child(4n){
+      margin-right: 0;
+    }
+    .news li.item {
+      text-align: center;
+    }
+    .news li.item > .picture{
+      box-sizing: border-box;
+      padding-top: 1em;
+      background-color: #f4f4f4;
+      height: 220px;
+    }
+    .news .introduce > .active {
+      background-color: #e36844;
+      color: #ffffff;
+      display: inline-block;
+      margin: 2px;
+    }
+    .news .introduce > .price {
+      color: #e36844;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 人气推荐 -->
+    <div class="recommand">
+      <ul class="products">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- /人气推荐 -->
+    
+      <p>新品推荐</p>
+
+    
+    <!-- 新品 -->
+    <div class="news">
+      <ul class="list">
+        <li class="item">
+          <div class="picture">
+            <img src="./images/1.png" alt="">
+          </div>
+          <div class="introduce">
+            <div class="active">每满200减25券</div>
+            <div class="name">腰椎健康范，护腰塑形座椅</div>
+            <div class="price">￥395</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="picture">
+            <img src="./images/2.png" alt="">
+          </div>
+          <div class="introduce">
+            <div class="active">每满200减25券</div>
+            <div class="name">腰椎健康范，护腰塑形座椅</div>
+            <div class="price">￥395</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="picture">
+            <img src="./images/3.png" alt="">
+          </div>
+          <div class="introduce">
+            <div class="active">每满200减25券</div>
+            <div class="name">腰椎健康范，护腰塑形座椅</div>
+            <div class="price">￥395</div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="picture">
+            <img src="./images/4.png" alt="">
+          </div>
+          <div class="introduce">
+            <div class="active">每满200减25券</div>
+            <div class="name">腰椎健康范，护腰塑形座椅</div>
+            <div class="price">￥395</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    <!-- 多行新品 -->
+    <div class="news">
+      <ul class="list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

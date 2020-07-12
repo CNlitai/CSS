@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>二级导航</title>
+  <style>
+    /* 重置 */
+    html {
+      color: #333333;
+      font-size: 14px;
+      font-family: "微软雅黑";
+    }
+    body , ul,ol ,p,h1,h2,h3{
+      margin: 0;
+    }
+    ol,ul {
+      padding: 0;
+      list-style: none;
+    }
+    /* 布局 */
+    .header {
+      background-color: #003262;
+      color: #ffffff;
+    }
+    ul.nav::after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+    ul.nav > li {
+      float: left;
+      position: relative;
+      width: 100px;
+      text-align: center;
+      line-height: 2em;
+      cursor: pointer;
+    }
+    ul.nav >li:hover {
+      background-color: #ffffff;
+      color: #003262;
+    }
+    ul.nav > li > ul.nav_son {
+      position: absolute;
+      color: #003262;
+      display: none;
+    }
+    ul.nav >li:hover > ul.nav_son {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <!-- 一级菜单 -->
+      <ul class="nav">
+        <!-- 一级菜单项 -->
+        <li>
+          <span>学校概况</span>
+          <!-- 二级菜单 -->
+          <ul class="nav_son">
+            <li><span>学校简介</span></li>
+            <li><span>机构设置</span></li>
+          </ul>
+          <!-- 二级菜单 -->
+        </li>
+        <!-- 一级菜单项 -->
+        <li>
+          <span>人才培养</span>
+          <ul class="nav_son">
+            <li><span>本科教育</span></li>
+            <li><span>研究生教育</span></li>
+          </ul>
+        </li>
+        <li>
+          <span>科学研究</span>
+          <ul class="nav_son">
+            <li><span>科研成果</span></li>
+            <li><span>社科成果</span></li>
+          </ul>
+        </li>
+        <!-- 伪元素 -->
+      </ul>
+      <!-- 一级菜单 -->
+    </div>
+    <div class="content">
+
+    </div>
+    <div class="footer"></div>
+  </div>
+</body>
+</html>

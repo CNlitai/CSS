@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>属性选择器</title>
+  <style>
+    form > input[name*=e]{
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <form action="http://121.199.29.84:5588/user/login" method="GET" enctype="multipart/form-data">
+    用户名<input type="text" name="username">   <br>
+    密码 <input type="password" name="password"> <br>
+    性别  
+    <label for="radio_gender_male">
+      <input id="radio_gender_male" type="radio" value="male" checked name="gender"> 男
+    </label>
+
+    <label for="radio_gender_female">
+      <input id="radio_gender_female" type="radio" value="female" name="gender"> 女 
+    </label>
+    <br>
+    爱好
+      <label>
+        <input type="checkbox" name="hobbies" value="backetball"> 篮球
+      </label>
+      <input type="checkbox" name="hobbies" value="football"> 足球
+      <input type="checkbox" name="hobbies" value="run" checked> 跑步
+      <input type="checkbox" name="hobbies" value="swimming"> 游泳
+    <br>
+    头像
+    <input type="file" name="file">
+    <br>
+    <select name="clazz">
+      <option value="1">1班</option>
+      <option value="2">2班</option>
+      <option value="3" selected>3班</option>
+      <option value="4">4班</option>
+      <option value="5">5班</option>
+    </select>
+    <br>
+    <textarea name="introduce" cols="30" rows="10"></textarea>
+    <br>
+
+
+    <input type="submit" value="登录">
+  </form>
+</body>
+</html>

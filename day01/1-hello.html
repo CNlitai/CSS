@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第一个html</title>
+
+  <style>
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0;
+      color: #333333;
+    }
+
+    .nav {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: teal;
+      color: #ffffff;
+    }
+    .nav::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    .nav > li {
+      float: left;
+      width: 150px;
+      line-height: 30px;
+    }
+    .nav > li:hover {
+      background-color: #ffffff;
+      color:teal;
+    }
+  </style>
+</head>
+<body>
+  <!-- 块元素 -->
+  <ul class="nav">
+    <li>one</li>
+    <li>two</li>
+    <li>三</li>
+  </ul>
+  <div>这是一个div1</div>
+  <div>这是一个div2</div>
+  <h1>first html</h1>
+  <h2>first html</h2>
+  <h3>first html</h3>
+  <p>this is my first html</p>
+  <p>这是我写的第一个html文件</p>
+
+  <!-- 行内元素 -->
+  <span>this is span</span>
+  <a href="https://www.baidu.com">百度一下</a>
+  <strong>加粗标签</strong>
+
+</body>
+</html>

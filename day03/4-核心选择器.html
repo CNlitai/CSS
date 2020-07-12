@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>核心选择器</title>
+  <style>
+    /* 标签选择器 */
+    html {
+      color: #333333;
+      font-size: 14px;
+      font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    }
+    body {
+      margin: 0;
+    }
+    /* 组合选择器 */
+    ul ,ol {
+      margin: 0;
+      padding: 0;
+      list-style:none;
+    }
+    a {
+      color: #333333;
+      text-decoration: none;
+    }
+    /* class选择器 */
+    .logo {
+      font-size:20px;
+      line-height:2em;
+      padding: 0 2em;
+    }
+    /* id选择器 */
+    #wrapper {
+      padding: 1em;
+    }
+
+    /* 父子选择器 1+ 10 +1 + 1 = 13*/
+    ul.right_nav  li > a {
+      color: teal;
+    }
+    /* 下一个兄弟 100 + 1 + 1 = 102*/
+    #wrapper > p ~ * a{
+      color: thistle;
+    }
+
+    /* 伪类选择器 */
+    ul.nav > li {
+      line-height: 2em;
+      background-color: #f4f4f4;
+    }
+    /* ul.nav > li:first-child { */
+    /* ul.nav > li:last-child { */
+    ul.nav > li:nth-child(even) {
+      background-color: thistle;
+    }
+    ul.nav > li a {
+      color: #ffffff;
+    }
+    ul.nav > li:hover {
+      background-color: teal;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        大气网格化治理云平台
+      </div>
+    </div>
+    <div class="content">
+      <div class="left">
+        <ul class="nav">
+          <li><a href="">工程管理</a></li>
+          <li><a href="">设备管理</a></li>
+          <li><a href="">大气监控</a></li>
+          <li><a href="">系统设置</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div id="wrapper">
+          <p>hello world</p>
+          <ol>
+            <li><a href="">test01</a></li>
+            <li><a href="">test02</a></li>
+          </ol>
+          <!-- 右侧导航 -->
+          <ul class="right_nav">
+            <li>
+              <a href="">IT</a>
+              <ul>
+                <li><a href="">JavaEE</a></li>
+                <li><a href="">WebUI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">娱乐</a>
+            </li>
+            <li>
+              <a href="">体育</a>
+            </li>
+          </ul>
+          <!-- 右侧导航 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
