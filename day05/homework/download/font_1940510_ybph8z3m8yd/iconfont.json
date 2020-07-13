@@ -1,0 +1,79 @@
+{
+  "id": "1940510",
+  "name": "IconDemo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "128980",
+      "name": "github5",
+      "font_class": "github5",
+      "unicode": "e7af",
+      "unicode_decimal": 59311
+    },
+    {
+      "icon_id": "833503",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "3176643",
+      "name": "GitHub",
+      "font_class": "GitHub",
+      "unicode": "ea09",
+      "unicode_decimal": 59913
+    },
+    {
+      "icon_id": "3506933",
+      "name": "github",
+      "font_class": "github1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4486799",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "4486805",
+      "name": "Pinterest",
+      "font_class": "Pinterest",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "4486811",
+      "name": "YouTube",
+      "font_class": "YouTube",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "5127345",
+      "name": "github",
+      "font_class": "github2",
+      "unicode": "e799",
+      "unicode_decimal": 59289
+    },
+    {
+      "icon_id": "11983543",
+      "name": "github",
+      "font_class": "github3",
+      "unicode": "ea0b",
+      "unicode_decimal": 59915
+    },
+    {
+      "icon_id": "15851676",
+      "name": "twitter",
+      "font_class": "tuite",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}
