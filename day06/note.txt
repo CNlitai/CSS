@@ -5,7 +5,7 @@
             url('图片地址')
 
         background-position://位置
-        
+
         background-repeat://重复
             repeat repeat-x repeat-y repeat-
         background-origin://重复的起点
@@ -19,7 +19,24 @@
 
 
 2.定位布局
-
+    解决悬浮问题
+    粘滞布局
+    position: static//静态的 默认
+        relative
+            相对点
+            是否脱离文档流：不脱离
+        absolute
+            相对点
+            是否脱离文档流
+        fixed
+            相对点
+            是否脱离文档流
+        sticky
+            相对点
+            是否脱离文档流
+            
+    当position的取值为以上四个之一，我们就认为当前这个元素为定位元素。
+    定位布局可以使用定位属性 left right top bottom;
 
 
 3.伸缩盒布局
