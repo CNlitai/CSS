@@ -1,0 +1,33 @@
+1.背景色
+    1) 背景规则
+        background-color:
+        background-image:
+            url('图片地址')
+
+        background-position://位置
+        
+        background-repeat://重复
+            repeat repeat-x repeat-y repeat-
+        background-origin://重复的起点
+
+        background-clip://裁切的起点
+        
+        background-size:
+
+
+
+
+
+2.定位布局
+
+
+
+3.伸缩盒布局
+
+
+
+4.动画、过渡、变形
+    
+
+
+5.相应式布局

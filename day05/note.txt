@@ -51,11 +51,11 @@
 
 		<span class="iconfont icon-aixin"><span>
 
-9. 实体
+3. 实体
 	&nbsp;
 	&lt;
 	&gt;
-10. 其他规则
+4. 其他规则
 	display
 		block
 		inline
@@ -65,7 +65,7 @@
 	表格规则
 		border-collapse:
 
-11. 单位
+5. 单位
 	绝对单位
 		10px
 
@@ -79,6 +79,6 @@
 		函数 			rgb(114,141,153) 	=> #8f8d98
 		函数 			rgba(114,141,153,1) 
 
-12. 背景色
+6. 背景色
 	background-
 	background
