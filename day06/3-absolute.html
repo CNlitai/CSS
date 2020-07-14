@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>absolute</title>
+    <style>
+        .parent {
+      background: #cccccc;
+      padding: 1em 0;
+      
+
+      position: relative;
+    }
+
+    .parent > .box1 {
+        height: 100px;
+      /* width: 400px; */
+      opacity: .5;
+      background-color: plum;
+
+      position: absolute;
+      left: 100px;
+      right: 0;
+      top: 100px;
+
+    }
+
+    .parent > .box2 {
+      height: 130px;
+      background-color: pink;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>
