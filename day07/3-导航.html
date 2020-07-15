@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1943982_2ztawf2f16m.css">
+    <style>
+        .iconfont {
+            font-size: 26px;
+        }
+
+        /* 容器 */
+        .container {
+            background-color: #f4f4f4;
+        }
+
+        /* 内容 */
+        .content {
+            height: 1000px;
+        }
+
+        /* 导航 */
+        .nav {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background-color: #ffffff;
+
+        }
+
+        .nav>ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav>ul>li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .nav>ul>li.active {
+            color: tomato;
+        }
+
+        .nav .iconfont {
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+
+        </div>
+        <!-- 导航 -->
+        <div class="nav">
+            <ul>
+                <li>
+                    <div><i class="iconfont icon-gouwuche"></i></div>
+                    <div>首页</div>
+                </li>
+                <li>
+                    <div><i class="iconfont icon-shouji"></i></div>
+                    <div>分类</div>
+                </li>
+                <li class="active">
+                    <div><i class="iconfont icon-libao"></i></div>
+                    <div>京喜</div>
+                </li>
+                <li>
+                    <div><i class="iconfont icon-tongzhi"></i></div>
+                    <div>购物车</div>
+                </li>
+                <li>
+                    <div><i class="iconfont icon-dingyue"></i></div>
+                    <div>我</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
