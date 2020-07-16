@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>粘滞布局</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .news_wrapper {
+            width: 1090px;
+            margin: 0 auto;
+        }
+
+        .news>ul {
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+        }
+
+        .news>ul>li {
+            width: 24.5%;
+            background-color: teal;
+        }
+
+        .left_nav,
+        .right_nav {
+            float: left;
+            width: 100px;
+            height: 300px;
+            background-color: thistle;
+
+            position: sticky;
+            top: 40px;
+        }
+
+        .right_nav {
+            float: right;
+        }
+
+        .nav {
+            position: sticky;
+            top: 0px;
+            background-color: rebeccapurple;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 顶层 -->
+        <div class="header">头</div>
+        <!-- 导航 -->
+        <div class="nav">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 广告面板 -->
+        <div class="panel">图片</div>
+        <!-- 粘滞 -->
+        <div class="left_nav">
+            左侧导航
+        </div>
+        <div class="right_nav">
+            右侧导航
+        </div>
+        <!--/ 粘滞 -->
+
+        <!-- 新品容器 -->
+        <div class="box">
+
+            <!-- 1090px -->
+            <div class="news_wrapper">
+                <div class="news">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="other" style="height: 10000px; background-color: pink;">
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

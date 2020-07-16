@@ -21,6 +21,24 @@
                 cdn加速
                     将库 放在cdn服务器上
 
+    3) 过渡 动画
+        更加简单的动画 没有动画帧
+        需要触发(:hover)
+
+
+        transition-property 需要过渡的属性
+
+        transition-duration 持续时间
+
+        transition-timing-function 时间曲线函数
+
+        transition-delay 延迟时间
+
+    4) 变形
+        transform:
+    5) 平移
+        transform:translate
+        
 2.
 
 

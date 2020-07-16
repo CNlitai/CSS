@@ -27,7 +27,7 @@
   /* 2. 布局 */
   .nav {
       margin-top: 2em;
-      border-bottom: 1px solid #cccccc;
+      border-bottom: 1px solid red;
       padding-bottom: .1em;
       position: relative;
   }
