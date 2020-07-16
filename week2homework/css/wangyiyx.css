@@ -63,7 +63,18 @@ div.header_background>div.header {
 
 ul.nav>li.nav-relative>ul.nav-son {
     position: absolute;
+    color: #333;
     display: none;
+    background-color: #fff;
+}
+
+ul.nav>li:hover>ul.nav-son {
+    display: block;
+
+}
+
+ul.nav>li:hover>ul.nav-son>li:hover {
+    color: #CC9756;
 }
 
 div.header-left {
