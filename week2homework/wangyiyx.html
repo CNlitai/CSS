@@ -5,364 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>网易严选 - 以严谨的态度，为中国消费者甄选天下优品</title>
+    <title>网易严选</title>
     <link rel="stylesheet" href="./css/wangyiyx.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1943982_casi3uc53st.css">
-    <script type="">
-    window.onload = function () {
-
- 
-
-        var div = document.getElementById('main');
-        var img = div.getElementsByTagName('img');
-        var count = 0;
-
-        var timer = null;
-
-        timer=setInterval(change ,2000);
-
-        function change() {
-
-
-            for (var i = 0; i < img.length; i++) {
-
-            img[i].style.display = 'none';
-            }
-
-            img[count].style.display = 'block';
-
-            count++;
-            if (count == img.length) {
-             count = 0;
-            }
-        }
-        div.onmouseover = function () {
-
-            clearInterval(timer);
-        }
-        div.onmouseout = function () {
-            timer = setInterval(change, 2000);
-
-        }
-    }
-    </script>
 </head>
-
 
 <body>
     <div class="container">
-        <div class="header_background">
-            <div class="header">
-                <!-- 导航栏 -->
-
-                <div class="header-left">
-                    <span class="iconfont icon-tongzhi"></span>
-                    <a href="">关于响应国家全面推行电子发票的决定</a>
+        <!-- 黑条 -->
+        <div class="siteNav">
+            <div class="yx-row">
+                <div class="yx-noticeitem">
+                    <span class="icon, iconfont icon-tongzhi"></span>
+                    <span class="noticeText"><a href="#">关于相应国家全面推广电子发票的通知</a></span>
                 </div>
-
-                <div class="header-right">
+                <div class="yx-siteNav-right">
                     <ul class="nav">
-                        <li><span><a href="#">登录/注册</a></span>
-
-                        </li>
-                        <li><span><a href="#">我的订单</a></span></li>
-                        <li><a href="#">会员</a></li>
-                        <li><a href="#">甄选家</a></li>
-                        <li class="nav-relative">
-                            <a href="#">企业采购</a>
-                            <span class="iconfont icon-xia"></span>
-                            <ul class="nav-son">
-                                <li>企业购</li>
-                                <li>礼品卡</li>
-                                <li>联系我们</li>
-                            </ul>
-
-                        </li>
-                        <li class="nav-relative">
-                            <a href="#">客户服务</a>
-                            <span class="iconfont icon-xia"></span>
-                            <ul class="nav-son">
-                                <li>在线客服</li>
-                                <li>帮助中心</li>
-                                <li>商务合作</li>
-                                <li>开放平台</li>
-                            </ul>
-                        </li>
-                        <li>
-
-                            <span class="iconfont icon-shouji"></span>
-                            <a href="#">APP</a>
-
-                        </li>
+                        <li>登录/注册</li>
+                        <li>我的订单</li>
+                        <li>会员</li>
+                        <li>甄选家</li>
+                        <li>企业采购</li>
+                        <li>客户服务</li>
+                        <li>APP</li>
                     </ul>
-
-                </div>
-
-            </div>
-        </div>
-        <!-- /导航栏 -->
-        <div class="funcTab">
-            <div class="funcTab-left">
-                <img src="./img/logo.png" alt="logo" width="289px" height="94px">
-
-            </div>
-
-            <div class="funcTab-mid">
-                <div class="funcTab-mid-searchinput">
-
-                    <!-- <span class="iconfont icon-sousuo"></span> -->
-                    <input type="text" name="searchinput" id="searchinput">
-
-
-                    <div class="funcTab-mid-searchButton">
-                        <span id="button_1">搜索</span>
-                    </div>
                 </div>
             </div>
-
-            <div class="funcTab-right">
-
-                <input type="button" value="购物车" id="button_2">
-
-            </div>
-
         </div>
 
-        <div class="funcTab-bar">
-            <div class="center">
-                <ul class="nav_bar">
-                    <li class="item">
-                        <span>首页</span>
-                    </li>
-                    <li class="item">
-                        <span>居家生活</span>
-                        <!-- 二级菜单 -->
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <span>服饰鞋包</span>
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item"><span>美食酒水</span>
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item"><span>个护清洁</span>
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item"><span>母婴亲子</span>
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item"><span>运动旅行</span>
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item"><span>数码家电</span>
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item"><span>严选全球</span>
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item"><span>为你严选</span>
-                        <ul class="nav_bar_son">
-                            <li><span>口碑好物</span></li>
-                            <li><span>抑菌防螨</span></li>
-                            <li><span>春夏好物</span></li>
-                            <li><span>主题床品</span></li>
-                            <li><span>收纳</span></li>
-                        </ul>
-                    </li>
-                    <li class="item"><span>众筹</span></li>
-                </ul>
-            </div>
-        </div>
+        <!-- 黑条 -->
 
 
-        <div id="main">
-            <a href="https://act.you.163.com/act/pub/RYss0ACosCqI.html?_stat_referer=index&_stat_area=banner_3"><img
-                    src="./images/lb1.png" class="pic" style="display: block;"></a>
-            <a href="https://you.163.com/item/detail?id=3990946&_stat_referer=index&_stat_area=banner_7"><img
-                    src="./images/lb2.png" class="pic" alt=""></a>
-            <a href="https://you.163.com/item/detail?id=3990946&_stat_referer=index&_stat_area=banner_7"><img
-                    src="./images/lb3.png" class="pic" alt=""></a>
-        </div>
+        <!-- logo 搜索栏 购物车 -->
+
+        <!-- logo 搜索栏 购物车 -->
 
 
-        <div id="xptj">
-            <a href="#" style="font-size: 20px; color:#111111; ">新品推荐</a>
-            <span>为你寻觅世间好物</span>
-        </div>
+        <!-- 分类导航栏 -->
 
 
-        <!-- 新品推荐 -->
-        <div class="news">
-            <ul class="list">
-                <li class="item">
-                    <div class="picture">
-                        <img src="./images/1.png" alt="">
-                    </div>
-                    <div class="introduce">
-                        <div class="active">每满200减25券</div>
-                        <div class="name">腰椎健康范，护腰塑形座椅</div>
-                        <div class="price">￥395</div>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="picture">
-                        <img src="./images/2.png" alt="">
-                    </div>
-                    <div class="introduce">
-                        <div class="active">每满200减25券</div>
-                        <div class="name">腰椎健康范，护腰塑形座椅</div>
-                        <div class="price">￥395</div>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="picture">
-                        <img src="./images/3.png" alt="">
-                    </div>
-                    <div class="introduce">
-                        <div class="active">每满200减25券</div>
-                        <div class="name">腰椎健康范，护腰塑形座椅</div>
-                        <div class="price">￥395</div>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="picture">
-                        <img src="./images/4.png" alt="">
-                    </div>
-                    <div class="introduce">
-                        <div class="active">每满200减25券</div>
-                        <div class="name">腰椎健康范，护腰塑形座椅</div>
-                        <div class="price">￥395</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <!-- 分类导航栏 -->
 
-        <div id="rqtj">
-            <span><a href="#" style="font-size: 20px; color:#111111; ">人气推荐</a></span>
-            <span class="innerWarp"><a href="#">编辑推荐</a></span>
-            <span class="innerWarp"><a href="#">热销总榜</a></span>
-        </div>
-        <!-- 人气推荐 -->
-        <div class="recommand">
-            <ul class="products">
-                <li>
-                    <img src="./images/tj-1.png">
-                    <div class="introduce" style="padding-top: 30px;">
-                        <div class="active">每满200减25券</div>
-                        <div class="name">【丁磊直播款】男式精梳棉圆领短袖T恤衫</div>
-                        <div class="price">￥49</div>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/tj-2.png" alt="">
-                    <div class="introduce">
-                        <div class="active">特价</div>
-                        <div class="name">全面助力发育，全价幼猫粮 1.8千克</div>
-                        <div class="price">￥88</div>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/tj-3.png" alt="">
-                    <div class="introduce">
-                        <div class="active">特价</div>
-                        <div class="name">全面助力发育，全价幼猫粮 1.8千克</div>
-                        <div class="price">￥88</div>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/tj-4.png" alt="">
-                    <div class="introduce">
-                        <div class="active">特价</div>
-                        <div class="name">全面助力发育，全价幼猫粮 1.8千克</div>
-                        <div class="price">￥88</div>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/tj-5.png" alt="">
-                    <div class="introduce">
-                        <div class="active">特价</div>
-                        <div class="name">全面助力发育，全价幼猫粮 1.8千克</div>
-                        <div class="price">￥88</div>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/tj-3.png" alt="">
-                    <div class="introduce">
-                        <div class="active">特价</div>
-                        <div class="name">全面助力发育，全价幼猫粮 1.8千克</div>
-                        <div class="price">￥88</div>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/tj-6.png" alt="">
-                    <div class="introduce">
-                        <div class="active">特价</div>
-                        <div class="name">全面助力发育，全价幼猫粮 1.8千克</div>
-                        <div class="price">￥88</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- /人气推荐 -->
+        <!-- 轮播图 -->
+
+        <!-- 轮播图 -->
+
+        <!-- 新品首发 粘滞框 -->
+
+
+        <!-- 新品首发 粘滞框 -->
+
+
+        <!-- 七格布局 -->
+
+
+        <!-- 七格布局 -->
 
 
 
-
-        <div class="footer">
-            <span>网易严选 @ 2020</span>
-        </div>
     </div>
-
-
 </body>
 
 </html>
