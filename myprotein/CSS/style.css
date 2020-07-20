@@ -31,4 +31,10 @@ div.responsiveSubMenu_container>a.guojia>button {
     border: 1px solid transparent;
     outline: none;
     color: red;
+
+
+}
+
+div.westendHeader-sticky {
+    position: sticky;
 }
