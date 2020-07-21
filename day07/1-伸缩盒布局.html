@@ -4,8 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>伸缩盒</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        ul {
+            padding: 1em 0;
+            background-color: #cccccc;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        ul>li {
+            height: 100px;
+            background-color: seagreen;
+            width: 30%;
+            margin-bottom: 1em;
+        }
+
+        ul>li:nth-child(odd) {
+            background-color: salmon;
+        }
+    </style>
 </head>
 
 <body>

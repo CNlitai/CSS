@@ -35,18 +35,178 @@
                 <img src="./img/logo.png" alt="">
             </div>
             <div class="search">
-
+                <input type="text" class="headerSearch-input">
+                <a href="#"><img src="sousuo" alt=""></a>
+            </div>
+            <div class="zhanghu">
+                <span>
+                    <i class="iconfont"></i>
+                    <span>账户</span>
+                </span>
             </div>
             <div class="shopcar">
 
+                <span>
+                    <i class="iconfont"></i>
+                    <span>购物车</span>
+                </span>
             </div>
         </div>
 
-        <div style="height:5000px">
+        <div class="header">
+
+            <ul class="nav">
+                <li>
+                    <span>
+                        营养补剂
+                    </span>
+                    <ul class="nav_son">
+                        <li></li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+
+                </li>
+                <li>
+                    <span>
+                        服装配饰
+                    </span>
+                    <ul class="nav_son">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>
+                        运动目标
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        特别膳食需求
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        按系列购买
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        博客
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        健康中心
+                    </span>
+                </li>
+            </ul>
 
         </div>
-    </div>
 
+        <div class="responsiveUsp_slider">
+            <div class="responsiveUsp_slider1">
+                1
+            </div>
+            <div class="responsiveUsp_slider2">
+                2
+            </div>
+            <div class="responsiveUsp_slider3">
+                3
+            </div>
+        </div>
+
+        <div class="stripBanner">
+            <a href="#" class="stripBanner_text">
+
+                摇一摇，清凉一夏！输入优惠码： DUO，立享全场1件7折，2件65优惠！
+
+            </a>
+        </div>
+
+        <div id="main">
+            <a href="#"><img src="./img/Copy_of_1920___586_CN_banner-050848.png" class="pic"
+                    style="display: block;width:1440px;height: 439.5px;"></a>
+            <a href="#"><img src="./img/Copy_of_1920___586_CN_banner_(50)-043756.png" class="pic"
+                    style="width:1440px;height: 439.5px;"></a>
+        </div>
+
+        <!-- 热卖推荐 -->
+        <div class="rmtj">
+            <span>Myprotein官网热卖推荐</span>
+
+        </div>
+
+        <div class="news">
+            <ul class="list">
+                <li class="item">
+                    <div class="picture">
+                        <img src="./img/2.png" alt="">
+                    </div>
+
+                </li>
+                <li class="item">
+                    <div class="picture">
+                        <img src="./images/2.png" alt="">
+                    </div>
+
+                </li>
+                <li class="item">
+                    <div class="picture">
+                        <img src="./images/3.png" alt="">
+                    </div>
+
+                </li>
+                <li class="item">
+                    <div class="picture">
+                        <img src="./images/4.png" alt="">
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script type="">
+        window.onload = function () {
+    
+     
+    
+            var div = document.getElementById('main');
+            var img = div.getElementsByTagName('img');
+            var count = 0;
+    
+            var timer = null;
+    
+            timer=setInterval(change ,2000);
+    
+            function change() {
+    
+    
+                for (var i = 0; i < img.length; i++) {
+    
+                img[i].style.display = 'none';
+                }
+    
+                img[count].style.display = 'block';
+    
+                count++;
+                if (count == img.length) {
+                 count = 0;
+                }
+            }
+            div.onmouseover = function () {
+    
+                clearInterval(timer);
+            }
+            div.onmouseout = function () {
+                timer = setInterval(change, 2000);
+    
+            }
+        }
+        </script>
 </body>
 
 </html>
