@@ -125,16 +125,17 @@ div.responsiveUsp_slider {
 }
 
 div.responsiveUsp_slider {
+    margin: 0 auto;
+
+    padding-top: 20px;
+    height: 36px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-div.responsiveUsp_slider>div.responsiveUsp_slider1+div.responsiveUsp_slider2+div.responsiveUsp_slider3 {
 
-    flex-basis: auto;
-}
 
 /* 三盒伸缩布局 */
 
