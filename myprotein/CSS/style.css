@@ -53,7 +53,7 @@ div.westendHeader-sticky>div.shopcar {
 }
 
 div.westendHeader-sticky>div.search {
-    width: 886px;
+    width: 800px;
     text-align: center;
     line-height: 71px;
 
@@ -69,9 +69,10 @@ div.westendHeader-sticky::after {
 div.westendHeader-sticky>div.zhanghu,
 div.westendHeader-sticky>div.shopcar {
     width: 160px;
-    height: 71px;
+    height: 41px;
     margin: 0 auto;
     text-align: center;
+    padding-top: 30px;
 }
 
 div.header {
@@ -112,6 +113,11 @@ ul.nav>li:hover>ul.nav_son {
     display: block;
 }
 
+ul.nav>li:hover>ul.nav_son>li {
+    background-color: #ffffff;
+
+}
+
 /* 三盒伸缩布局 */
 div.responsiveUsp_slider {
     background-color: #f2f2f2;
@@ -119,7 +125,7 @@ div.responsiveUsp_slider {
 }
 
 div.responsiveUsp_slider {
-    position: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -201,8 +207,38 @@ div.twoItemEditorial_container {
     display: flex;
     width: 1300px;
     box-sizing: border-box;
-
     justify-content: space-around;
 
+}
+
+div.box-left,
+div.box-right {
+    text-align: left;
+    padding: 1em 0;
+}
+
+div.box-left>*,
+div.box-right>* {
+    padding: 0.5em 0;
+}
+
+div.box-left>.button,
+div.box-right>.button {
+    color: #ffffff;
+    background-color: #008190;
+    margin: 16px 0 0;
+    padding: 0 16px;
+    width: 98px;
+    height: 40px;
+
+}
+
+div.sixItemCategories_container {
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 1300px;
+    display: flex;
+    justify-content: space-around;
 
 }
